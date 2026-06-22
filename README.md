@@ -15,7 +15,7 @@ Aplikacja to konsolowy system stworzony do obsługi wypożyczalni rowerów. Pozw
    * **Metody:** Implementuje standardowe obliczanie kosztów (`calculate_rental_cost`) i formatowanie tekstu.
 
 3. **ElectricBike**
-   * **Odpowiedzialność:** Reprezentuje rower ze wspomaganiem elektrycznym.
+   * **Odpowiedzialność:** Reprezentuje rower elektryczny.
    * **Właściwości:** Dziedziczy po `Bike` + `battery_level`.
    * **Metody:** Implementuje `calculate_rental_cost` z doliczeniem opłaty zależnej od pojemności baterii.
 
@@ -29,7 +29,7 @@ Aplikacja to konsolowy system stworzony do obsługi wypożyczalni rowerów. Pozw
    * **Właściwości:** `name`, generowane `client_id`, lista `rented_bikes`.
 
 6. **RentalSystem**
-   * **Odpowiedzialność:** Centralny punkt (Controller) zarządzający logiką biznesową systemu wypożyczalni.
+   * **Odpowiedzialność:** Centralny punkt (Controller) zarządzający logiką systemu wypożyczalni.
    * **Właściwości:** `name`, kolekcje `fleet` (dostępne rowery) oraz `clients` (zarejestrowani użytkownicy).
    * **Metody:** `add_bike()`, `add_client()`, `process_rental()`, `process_return()`, `show_status()`.
 
